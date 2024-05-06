@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*Aqui esta el diseño del menu y todo el header*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+span{
+    color: #2EA1FF;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header img{
+    padding: 12px;
+    border-radius: 20px;
+}
+.header{
+    background-image: url(img/Diseño\ sin\ título.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding:80px 0 0 0;
+    
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+}
+
+.logo{
+    color: #2EA1FF;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #000000;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #8f8e8e;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 70px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+/*Aqui esta  todo el header*/
+
+.header-txt{
+    width: 50%;
+    padding-right: 75px;
+}
+
+.header-txt h1{
+    color: #000000;
+    font-size: 45px;
+    line-height: 1;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+p{
+    font-size: 17px;
+    color: #f3efefeb;
+    margin-bottom: 35px;
+}
+
+.btn-1, .btn-2{
+    display: inline-block;
+    padding: 13px 35px;
+    background-color: #2EA1FF;
+    color: #ffffff;
+}
+/*Aqui esta el diseño del area de nosotros.*/
+
+.about{
+    padding: 130px 0;
+    display: flex;
+    margin: 20px;
+
+}
+
+.about-img{
+    flex-basis: 50%;
+    display: flex;
+    margin: 30px;
+}
+
+.about-img img{
+    width: 270px;
+    border-radius: 20px;
+    margin-right: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-txt{
+    flex-basis: 50%;
+}
+
+.about-txt p{
+    color: #444444;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 1;
+    color: #001739;
+    margin-bottom: 25px;
+}
+
+/*Mision,vison y valores.*/
+h2{
+    font-size: 40px;
+    line-height: 1;
+    color: #001739;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.products{
+    padding: 0 0 100px 0 ;
+    text-align: center;
+}
+
+.products h2{
+    margin-bottom: 45px;
+}
+
+.products-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 100px;
+}
+
+.product{
+    box-shadow: 0 0 20px rgba( 0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+
+.product-txt{
+    padding: 10px 10px 30px 10px;
+
+}
+
+.product-txt h3{
+    font-size: 40px;
+    color: #373737;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-txt p{
+    color: #444444;
+}
+
+.btn-2{
+    padding: 5px 25px;
+}
+
+/*Aqui va la informacion.*/
+
+
+.information{
+    padding: 70px 45px;
+    background-image: url(img/beautiful-church-background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+.information-content{
+    display: flex;
+
+
+}
+
+.informacion-1{
+    flex-basis: 50%;
+
+}
+
+.informacion-2{
+    flex-basis: 50%;
+    padding-left: 30px;
+}
+
+.informacion-2 h2{
+    color: #ffffff;
+}
+/*Aqui va a estar contacto.*/
+.img-content{
+    display: flex;
+    
+}
+
+.img-content img{
+    width: 200px;
+    margin-right: 15px;
+}
+
+.footer{
+    background-color: #fcfcfc;
+    padding: 50px 0;
+    margin: 10px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+}
+
+.link a{
+    font-size: 17px;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.redes{
+    display: flex;
+    justify-content:space-around;
+}
+
+@media(max-width: 768px){
+    .menu{
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #2EA1FF;
+        display: none;
+    }
+
+    .menu .navbar ul li a:hover{
+        color: #001739;
+
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header{
+        background-position: left;
+        min-height: 0vh;
+        padding: 100px 30px;
+    }
+
+    .header-txt{
+        width: 100%;
+        text-align: center;
+        padding: 0;   
+    }
+
+    .about{
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .about-img{
+        justify-content: center;
+        order: 2;
+    }
+
+    .about-img img{
+        width: 150px;
+        margin: 0 15px;
+    }
+
+    .about-txt{
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .about-txt p{
+        margin-bottom: 15px;
+    }
+
+    .products{
+        padding: 30px;
+    }
+
+    .products-content{
+        padding: 0 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .information{
+        padding: 30px;
+        background-position: right;
+        margin: 30px 0 0 0;
+    }
+
+    .information-content{
+        flex-direction: column;
+    }
+
+    .informacion-2{
+        text-align: center;
+        padding: 0;
+    }
+
+    .img-content{
+        justify-content: center;
+    }
+
+    .img-content img{
+        width: 80px;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+
+
+
+
+
+
+
+}
+
+
